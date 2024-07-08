@@ -10,7 +10,7 @@ setup(
 	},
 	packages=find_packages(where="src"),
 	package_dir={"": "src"},
-    package_data={"": ["*.png"]},
+	package_data={"": ["*.png"]},
 	install_requires=[
 		"numpy==2.0.0",
 		"pillow==10.4.0",
