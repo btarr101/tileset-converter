@@ -1,0 +1,9 @@
+{
+	"conversion_configs": [
+		{
+			"source_path": "./wang-template.png",
+			"destination_path": "../test_output/blob-template.png",
+			"conversion": "WANG_TO_BLOB"
+		}
+	]
+}

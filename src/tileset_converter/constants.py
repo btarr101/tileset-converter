@@ -1,0 +1,1 @@
+DEFAULT_MANIFEST_FILENAME = "tileset-converter-manifest.json"
