@@ -13,6 +13,7 @@ from .manifest import Manifest, ConversionType, ConversionConfig
 from .constants import DEFAULT_MANIFEST_FILENAME
 
 logger = logging.getLogger()
+logger.setLevel("INFO")
 
 class Args(tap.TypedArgs):
 	input_filepath: Optional[str] = tap.arg("-i", help="Input file path", default=None)
