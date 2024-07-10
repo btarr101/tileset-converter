@@ -15,11 +15,11 @@ from .constants import DEFAULT_MANIFEST_FILENAME
 logger = logging.getLogger()
 
 class Args(tap.TypedArgs):
-	input_filepath: str = tap.arg("-i", help="Input file path")
+	input_filepath: Optional[str] = tap.arg("-i", help="Input file path", default=None)
 	output_filepath: str = tap.arg("-o", default="./blob-tileset.png", help="Output file path")
 	conversion: ConversionType = tap.arg("-c", default=ConversionType.WANG_TO_BLOB)
 
-	manifest_path: str = tap.arg("-m", help="Manifest file with conversion configuration")
+	manifest_path: Optional[str] = tap.arg("-m", help="Manifest file with conversion configuration", default=None)
 
 def command(args: Args):
 	conversion_configs: list[ConversionConfig] = []
